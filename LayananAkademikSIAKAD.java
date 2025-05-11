@@ -12,20 +12,21 @@ public class LayananAkademikSIAKAD {
             System.out.println("3. lihat mahasiswa terdepan");
             System.out.println("4. Lihat semua antrian");
             System.out.println("5. Jumlah mahasiswa dalam antrian");
+            System.out.println("6. Lihat data terakhir");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu:"); 
             pilih = sc.nextInt(); sc.nextLine();
             switch (pilih) {
                 case 1:
-                    System.out.println("NIM  :");
+                    System.out.print("NIM  :");
                     String nim = sc.nextLine();
-                    System.out.println("Nama :");
+                    System.out.print("Nama :");
                     String nama = sc.nextLine();
-                    System.out.println("Prodi:");
+                    System.out.print("Prodi:");
                     String prodi = sc.nextLine();
-                    System.out.println("Kelas:");
+                    System.out.print("Kelas:");
                     String kelas = sc.nextLine();
-                    System.out.println("NIM :");
+                    System.out.print("NIM :");
                     Mahasiswa mhs  = new Mahasiswa(nim, nama, prodi, kelas);
                     antrian.tambahAntrian(mhs);
                     break;
@@ -44,6 +45,9 @@ public class LayananAkademikSIAKAD {
                     break;
                 case 5:
                     System.out.println("Jumlah dalam latihan: "+antrian.getJmlAntrian());
+                    break;
+                case 6:
+                    antrian.lihatAkhir();
                     break;
                 case 0:
                     System.out.println("Terima kasih.");

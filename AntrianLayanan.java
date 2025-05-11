@@ -56,7 +56,7 @@ public class AntrianLayanan {
             System.out.println("Queue masih kosong");
         }
     }
-    public void Enqueue(Mahasiswa mhs){
+    public void tambahAntrian(Mahasiswa mhs){
         if (IsFull()) {
             System.out.println("Antrian sudah penuh! Tidak dapat menambah mahasiswa.");
             return;

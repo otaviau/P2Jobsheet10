@@ -60,9 +60,9 @@ public class AntrianLayanan {
         if (!IsEmpty()) {
             front = rear = -1;
             size = 0;
-            System.out.println("Queue berhasil dikosongkan");
+            System.out.println("Antrian berhasil dikosongkan");
         } else {
-            System.out.println("Queue masih kosong");
+            System.out.println("Antrian masih kosong");
         }
     }
     public void tambahAntrian(Mahasiswa mhs){
